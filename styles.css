@@ -1,0 +1,543 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Top Navigation */
+.top-navigation {
+  width: 100%;
+  height: 77px;
+  padding: 26px 80px 26px 80px;
+  background-color: #6B3CC9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navigation .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-navigation .logo {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: flex-end; /* Align nav to the right */
+  align-items: center; /* Center items vertically */
+  height: 100px; /* Adjust height as needed */
+}
+
+.top-navigation nav {
+  height: 100%;
+  margin: auto;
+  margin-left: 800px; 
+}
+
+.top-navigation .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Center items vertically within nav */
+}
+
+.top-navigation .nav-links li a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-decoration: none;
+}
+
+.top-navigation .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.logo{
+  display: flex;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 700px;
+}
+
+.hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .hero-frame {
+  position: absolute;
+  top: 354px;
+  left: 80px;
+  width: 630px;
+  padding: 24px 40px 32px 40px;
+  background: linear-gradient(270deg, #1CBDDD 0%, #4DCA79 100%);
+  color: #FFFFFF;
+}
+
+.hero .hero-frame h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.custom-button {
+  width: 214px;
+  height: 38px;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  background-color: #F28D35;
+  color: white;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.custom-button:hover {
+  opacity: 0.9;
+}
+
+.custom-button:active {
+  opacity: 0.8;
+}
+
+
+/* Frame 2 Section */
+.frame-2 {
+  position: relative; /* Changed to relative to keep it within the flow */
+  top: 50%;
+  max-width: 1064px;
+  height: 414px;
+  margin:auto; /* Centered and added margin */
+  display: flex;
+  gap: 108px;
+  
+  
+}
+
+.frame-2-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 108px;
+}
+
+.frame-2-image img {
+  width: 414px;
+  height: 414px;
+  object-fit: cover;
+}
+
+.frame-2-content {
+  padding: 70px;
+  width: 542px;
+  height: auto;
+  max-height: 187px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.frame-2-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  color: #6B3CC9;
+  margin: 0;
+  width: 507px;
+  height: 33px;
+}
+
+.frame-2-content p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  width: 129px;
+  height: 38px;
+  background-color: #F28D35;
+
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 12px 20px 12px 20px;
+  margin-top: 8px;
+  opacity: 1; /* Set to 1 to make it visible */
+}
+
+
+.cta-button:hover {
+  background-color: #e07c2b;
+}
+
+/* Outer Frame */
+.frame-outer {
+  position: relative;
+  top: 100px; /* Adjusted the spacing */
+  width: auto;
+  max-width: 1064px;
+  height: auto;
+  height: 416px;
+  left: 188px;
+  gap: 108px;
+  margin:  auto; /* Centered and added margin */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align to the bottom */
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  margin-top: -100px ;
+}
+
+/* Inner Frame */
+.frame-inner {
+  
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Content Frame */
+.frame-content {
+
+  width: 542px;
+  height: 206px;
+  margin-top: 100px;
+  margin-left: -100px;
+  max-width: 507px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Image Frame */
+.frame-image {
+  width: 50%;
+  max-width: 414px;
+  background-image: url('https://s3-alpha-sig.figma.com/img/a2c7/a630/be108bd31437b72eaae8e1dbd7abd910?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CxbK6HmEAeXbxfnitqpV7fUQxwe4JY3Y7SgZhdwEDIAKZSMfNf1aV53EbFweO1xoBCn-5bMSVF3BGzzhlzZq4JVFKTyzAdUJRuYoF0cua34EaaCqzr4BKGIg2AKAsArGaNb~qGPANimnHZGbCb8vrb6xcOjwo2ePb9bR34OHSWektR2mijoRoZPjSLBEcfZtfr0Vw-hitIDxzf~QxRQNJRuzDjEF-V9iJmZJfMjTjR2bceNs4-WmzIs69gAZ7RMykNoPamimlujUmXXkt7GKyMJMaDyzC8JlOhYZcfVEm5mLaQl~GwhYONWZV8HyPZb~oJsekmDlPPcht7TSmSYkgw');
+  background-size: cover;
+  background-position: center;
+  height: 416px; /* Set height to match aspect ratio */
+  border-radius: 4px;
+}
+
+/* Frame Heading and Text */
+.frame-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  color: #6B3CC9;
+  margin: 0;
+  letter-spacing: 0.4px;
+  width: 507px;
+  height: 33px;
+  gap: 12px;
+}
+
+.frame-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+  margin: 0;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  width: 846px;
+  padding: 24px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* FAQ Heading Styles */
+.faq-heading {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: #6B3CC9;
+  margin-bottom: 28px;
+
+}
+
+/* FAQ Item Styles */
+.faq-item {
+  width: 100%;
+  max-width: 846px;
+  border-radius: 7px;
+  background: #FAF8FF;
+  overflow: hidden;
+
+}
+
+/* FAQ Question Styles */
+.faq-question {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  cursor: pointer;
+  line-height: 28px;
+  font-family: 'Inter';
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000; /* Default color */
+  transition: color 0.3s ease;
+}
+
+/* Active FAQ Question Styles */
+.faq-question.active {
+  color: #6B3CC9; /* Color when active */
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* FAQ Answer Styles */
+.faq-answer {
+  display: none; /* Hidden by default */
+  padding: 14px 24px;
+  background: #FAF8FF;
+  margin-right: 190px;
+  text-align: left;
+}
+
+.faq-answer p {
+  margin: 0;
+  color:  #6F6C90;
+}
+
+
+/* For screens 375px and below */
+@media (max-width: 375px) {
+  .faq-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .faq-heading {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .faq-item {
+    width: 100%;
+  }
+
+  .faq-item .faq-question {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+
+
+.footer {
+  background-color: #6B3CC9;
+  color: white;
+  padding: 40px 80px 20px 80px;
+  width: auto;
+  height: 266px;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  width: 413px;
+  height: 102px;
+}
+
+
+.footer-description {
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-top: 10px;
+  width: 413px;
+}
+
+.footer-right {
+  display: flex;
+  width: 522px;
+  height: 141px;
+  gap: 128px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font: 'Inter';
+  font-weight: 600;
+  font-size: 21px;
+  width: 179px;
+  height: 25px
+  
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  height: auto;
+  gap: 12px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  position: relative; /* To position the pseudo-element relative to this container */
+  text-align: center; /* Center-aligns text and links */
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Line Above Footer Bottom */
+.footer-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Positions the line at the top of the footer-bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 630px;
+  height: 1px;
+  background-color: #ffffff; /* White line color */
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+
+.logo svg {
+  width: 47px;
+  height: 37px;
+  fill: white;
+}
+
+.logo svg:nth-child(2) {
+  width: 27px;
+  height: 25px;
+}
+
+.logo svg:nth-child(3) {
+  width: 19px;
+  height: 25px;
+}
+
+.logo svg:nth-child(4) {
+  width: 47px;
+  height: 25px;
+}
+
+.logo svg:nth-child(5) {
+  width: 7px;
+  height: 25px;
+  margin-left: -10px;
+
+}
+
+.logo svg:nth-child(6) {
+  width: 21px;
+  height: 26px;
+  margin-left: 6px;
+}
+
+.logo svg:nth-child(7) {
+  width: 5px;
+  height: 25px;
+  margin-left: 9px;
+}
+
+.logo svg:nth-child(8) {
+  width: 19px;
+  height: 25px;
+  margin-left: 8px;
+}
+
+.logo svg:nth-child(9) {
+  width: 27px;
+  height: 25px;
+}
+
+.logo svg:nth-child(10) {
+  width: 15px;
+  height: 25px;
+}
+
+
+
